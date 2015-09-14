@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-switch.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+  
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <button id="backBtn" class="btn btn-default pull-left"><i class="fa fa-chevron-left"></i></button>
+        <h1><i class="fa fa-camera-retro"></i> FoxFoto</h1>
+      </div>
+    </div>
+  </header>
+
+  <section class="container-fluid btnContainer">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <button id="createCollageBtn" class="btn btn-choice btn-lg"><i class="fa fa-delicious"></i> Create Collage</button>
+        <p class="text-center">or</p>
+        <button id="editPhoto" class="btn btn-choice btn-lg"><i class="fa fa-edit"></i> Edit Photo</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 previousFotos">
+        <i class="fa fa-th"></i> Previous Fotos
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid collageSection">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-center">
+          <button id="pickImage" class="btn btn-choice btn-lg">Pick Fotos (at least 2)</button>
+        </div>
+        <div class="pull-right locationSwitch">
+          <label for="wantLocationBtn"><i class="fa fa-map-marker"></i> Map</label><br>
+          <input type="checkbox" id="wantLocationBtn">
+        </div>
+        <div id="imgDisplay">
+         <!-- Here picked images will be shown -->
+        </div>
+        <canvas id="displayCanvas"></canvas>
+        <div class="text-center">
+          <button id="createCollage" class="btn btn-choice btn-lg">Create Collage</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid editImageSection">
+    <div class="row">
+      <div class="col-md-12 content">
+        <div class="text-center">
+          <button id="pickImageForEdit" class="btn btn-choice btn-lg">Pick Foto</button>
+        </div>
+        
+        <canvas id="displayCanvasForEdit"></canvas>
+        
+        <div id="effectBtns" class="text-center">
+          <a id="grayEffect" class="btn btn-action"><i class="fa fa-paint-brush"></i></a>
+          <a id="sepiaEffect" class="btn btn-action"><i class="fa fa-sun-o"></i></a>
+          <a id="blurEffect" class="btn btn-action"><i class="fa fa-magic"></i></a>
+          <a id="invertEffect" class="btn btn-action"><i class="fa fa-star-half-empty"></i></a>
+          <br><br>
+          <a id="revert" class="btn btn-action"><i class="fa fa-refresh"></i></a>
+          <a id="toImgurAfterEdit" class="btn btn-action"><i class="fa fa-cloud"></i></a>
+          <a id="toLocalAfterEdit" class="btn btn-action"><i class="fa fa-download"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="container-fluid previousEdited">
+    <div class="row">
+      <div class="col-md-12 subHeader">
+        <i class="fa fa-chevron-circle-down"></i> <strong>Previous Fotos</strong>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 prevListings">
+        <ul></ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="actionBtns">
+    <button id="toImgur" class="btn btn-action btn-lg"><i class="fa fa-cloud"></i></button>
+    <a id="toLocal" class="btn btn-action btn-lg"><i class="fa fa-download"></i></a>
+    <button id="deleteCollage" class="btn btn-action btn-lg"><i class="fa fa-trash"></i></button>
+  </section>
+
+ 
+  
+
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-switch.min.js"></script>
+  <script src="js/jquery.collagePlus.min.js"></script>
+  <script src="js/jquery.collageCaption.min.js"></script>
+  <script src="js/jquery.removeWhitespace.min.js"></script>
+  <script src="js/app.js"></script>
+    
+  </body>
+
+</html>

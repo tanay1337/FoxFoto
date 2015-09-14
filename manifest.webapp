@@ -1,0 +1,25 @@
+{
+  "version": "0.1.0",
+  "name": "FoxFoto",
+  "description": "A photo editing app with collage making and photo sharing features",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/img/icons/icon16X16.png",
+    "48": "/img/icons/icon48X48.png",
+    "60": "/img/icons/icon60X60.png",
+    "128": "/img/icons/icon128X128.png"
+  },
+  "developer": {
+    "name": "Tanay Pant, Shubham Oli",
+    "url": "http://stockwolf.net/"
+  },
+  "type": "privileged",
+  "permissions": {
+    "geolocation": {
+      "description": "Obtain the current location of the user"
+    }
+
+  },
+  "fullscreen":"true",
+  "default_locale": "en"
+}
